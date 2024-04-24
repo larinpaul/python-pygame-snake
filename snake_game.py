@@ -6,7 +6,8 @@ WSIZE = (720, 680)
 
 screen = pg.display.set_mode(WSIZE)
 
-TSIDE = 20
+# TSIDE - переменная, в  которой  записан размер квадрата (змейки и яблока)
+TSIDE = 
 MSIZE = WSIZE[0] // TSIDE, WSIZE[1] // TSIDE
 
 start_pos = MSIZE[0] // 2, MSIZE[1] // 2
@@ -18,7 +19,7 @@ directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 
 apple = random.randint(0, MSIZE[0]-1), random.randint(0, MSIZE[1]-1)
 
-START_FPS = 10
+START_FPS = 25
 fps = START_FPS
 clock = pg.time.Clock()
 
